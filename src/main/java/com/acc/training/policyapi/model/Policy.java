@@ -2,7 +2,6 @@ package com.acc.training.policyapi.model;
 
 import java.util.Date;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import io.swagger.v3.oas.annotations.media.Schema;
