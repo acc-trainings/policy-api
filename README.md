@@ -1,33 +1,20 @@
-# Policy Service - API Spec
+# Policy API
 
-## Objective
+## Use Case
+* Develop Policy API
+   * Create Policy
+   * Get all policies
+* Build code
+* Package & Deploy
 
+## Tools & Technologies
+* Spring Boot, Spring Cloud
+* Mongo database
+* Web Services (REST)
+* OpenShift Cloud
+* DevOps
+* Jenkins
+* Reactive Development
+* Visual Studio Code
+* Maven
 
-
-## Use Case:
-
-
-
-## Prerequisties
-
-### `Knowledge` ###
-
-
-
-### `Visual Studio Code` ###
-
-3.	Check hardware and software requirements
-4.	Check system compatibility with platform software
-5.	Download Visual Studio Code from following URL
-    
-    Download: https://code.visualstudio.com/Download 
-
-    Geeting Started: https://code.visualstudio.com/docs/java/java-spring-boot
-    
-### `Visual Studio Code Required Plugins` ###
-
-1.	
-2. 
-3. 
-4. 
-5.
