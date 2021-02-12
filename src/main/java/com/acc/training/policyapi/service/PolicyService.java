@@ -1,8 +1,5 @@
 package com.acc.training.policyapi.service;
 
-import java.util.Collections;
-import java.util.List;
-
 import com.acc.training.policyapi.model.Policy;
 import com.acc.training.policyapi.repository.IPolicyRepository;
 
@@ -19,10 +16,13 @@ public class PolicyService {
         return policyRepository.save(policy);
     }
 
-    public List<Policy> getPolicies() {
-        List<Policy> result = policyRepository.findAll();
-        if (result.isEmpty()) {
-            return Collections.emptyList();
+    public Policy getPolicy(String policyId) {
+        Policy result = policyRepository.findByPolicyId(policyId);
+
+        //TODO: add web-client code for microservice communication
+
+        if (result == null) {
+            return null;
         }
         return result;
     }
