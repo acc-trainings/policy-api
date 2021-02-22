@@ -30,7 +30,7 @@ public class PolicyController {
     @Operation(summary = "Create Policy")
 	@ApiResponses(value = { 
 			@ApiResponse(responseCode = "200", description = "policy created successfully", 
-					content = { @Content(mediaType = "application/json", schema = @Schema(implementation = Policy.class)) }),
+					     content = { @Content(mediaType = "application/json", schema = @Schema(implementation = Policy.class)) }),
 			@ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content)})
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Policy> createPolicy(@RequestBody Policy body) {
@@ -52,6 +52,7 @@ public class PolicyController {
             @ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content) })
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<Policy> getPolicy(@Parameter(in = ParameterIn.PATH, description = "find policy", required=true, schema=@Schema()) @PathVariable("id") String policyId) {
+        
         Policy policy = policyService.getPolicy(policyId);
 
         if (null == policy) {
