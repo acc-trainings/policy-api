@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-@Document(collection = "policies-training")
+@Document(collection = "policies-training-sandeep")
 public class Policy {
 
     @Schema(description = "Id of the customer", example = "POL12345", required = true)
