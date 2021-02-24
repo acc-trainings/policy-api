@@ -35,7 +35,6 @@ public class PolicyService {
         Customer customer = customerWebClient.get()
                                              .uri("/customer/"+ customerId)
                                              .retrieve()
-
                                              .bodyToMono(Customer.class).block();
 
         result.setCustomer(customer);
